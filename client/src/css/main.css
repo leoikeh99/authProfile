@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@media screen and (max-width: 420px) {
+  .register,
+  .login {
+    width: 100%;
+    height: 98vh;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 25px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; } }
+
+@media screen and (max-width: 330px) {
+  .register,
+  .login {
+    padding: 15px !important; }
+    .register .top,
+    .login .top {
+      display: none; }
+    .register .firstImage,
+    .login .firstImage {
+      margin-bottom: 30px; } }
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafb; }
+
+.mb-1 {
+  margin-bottom: 10px; }
+
+.mr-1 {
+  margin-right: 10px; }
+
+.spaceOut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.container1 {
+  max-width: 90%;
+  margin: auto; }
+
+.container2 {
+  max-width: 800px;
+  margin: auto; }
+
+.container3 {
+  max-width: 400px; }
+
+.editBtn {
+  padding: 7px 35px;
+  background: transparent;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  color: #828282;
+  cursor: pointer;
+  text-decoration: none; }
+
+.register {
+  max-width: 400px;
+  margin: 0px auto;
+  padding: 45px;
+  padding-bottom: 35px;
+  border: 1px solid #bdbdbd;
+  border-radius: 24px;
+  margin-top: 15px; }
+  .register ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .register ul li {
+      list-style: none;
+      padding: 0 10px;
+      cursor: pointer; }
+  .register .bottom {
+    color: #828282;
+    font-size: 0.9rem;
+    text-align: center; }
+
+.login {
+  max-width: 400px;
+  margin: 0px auto;
+  padding: 45px;
+  padding-bottom: 35px;
+  border: 1px solid #bdbdbd;
+  border-radius: 24px;
+  margin-top: 35px; }
+  .login ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .login ul li {
+      list-style: none;
+      padding: 0 10px;
+      cursor: pointer; }
+  .login .bottom {
+    color: #828282;
+    font-size: 0.9rem;
+    text-align: center; }
+
+nav {
+  padding: 20px 0; }
+  nav p {
+    margin: 0; }
+  nav .menu {
+    position: relative;
+    cursor: pointer; }
+    nav .menu img {
+      width: 30px;
+      margin-right: 6px;
+      border-radius: 10px; }
+    nav .menu p {
+      font-weight: 600; }
+    nav .menu .dropDown {
+      position: absolute;
+      right: 0;
+      top: 55px;
+      padding: 0;
+      margin: 0;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); }
+      nav .menu .dropDown hr {
+        border: 0.5px solid #e0e0e0; }
+      nav .menu .dropDown li {
+        list-style: none;
+        color: #4f4f4f;
+        display: flex;
+        padding: 10px;
+        border-radius: 8px;
+        width: 150px;
+        cursor: pointer; }
+        nav .menu .dropDown li:hover {
+          background: #f2f2f2; }
+        nav .menu .dropDown li:last-child {
+          color: #eb5757; }
+        nav .menu .dropDown li p {
+          margin-left: 14px;
+          font-weight: 500;
+          font-size: 13px;
+          display: flex;
+          align-items: center; }
+
+.profile {
+  padding: 20px 0px;
+  padding-bottom: 30px;
+  margin: 0px 20px; }
+  .profile h1 {
+    margin: 0;
+    text-align: center; }
+  .profile p {
+    text-align: center; }
+  .profile ul {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px; }
+    .profile ul h3 {
+      margin: 0; }
+    .profile ul li {
+      list-style: none;
+      display: flex;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 14px 25px; }
+      .profile ul li p {
+        text-align: left;
+        display: flex;
+        align-items: center; }
+        .profile ul li p:first-child {
+          width: 200px;
+          font-size: 13px;
+          color: #bdbdbd; }
+        .profile ul li p:last-child {
+          font-weight: 600; }
+      .profile ul li:first-child {
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center; }
+        .profile ul li:first-child p {
+          text-align: left;
+          margin: 0;
+          font-size: 1.3rem;
+          color: #000; }
+        .profile ul li:first-child small {
+          color: #828282; }
+      .profile ul li:last-child {
+        border-bottom: 0; }
+      .profile ul li img {
+        width: 60px;
+        border-radius: 12px; }
+
+.editProfile {
+  padding: 20px 0px;
+  padding-bottom: 30px;
+  margin: 0px 20px; }
+  .editProfile .back {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    color: #2d9cdb;
+    text-decoration: none; }
+  .editProfile .cover {
+    padding: 30px;
+    padding-top: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px; }
+    .editProfile .cover input[type="file"] {
+      height: 0;
+      width: 0;
+      overflow: hidden; }
+    .editProfile .cover .header {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: 600; }
+    .editProfile .cover small {
+      color: #828282; }
+    .editProfile .cover form .right {
+      color: #828282;
+      font-size: 0.9rem; }
+    .editProfile .cover form .image {
+      width: 71px;
+      height: 71px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      border-radius: 8px;
+      margin: 23px 0px;
+      margin-right: 25px; }
+      .editProfile .cover form .image .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.4;
+        border-radius: 8px; }
+      .editProfile .cover form .image .center {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff; }
+    .editProfile .cover form .newAv {
+      margin-bottom: 10px; }
