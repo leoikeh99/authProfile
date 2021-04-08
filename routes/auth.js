@@ -149,7 +149,7 @@ router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
       if (err) throw err;
       res.cookie("auth", token);
       res.writeHead(302, {
-        Location: "http://localhost:3000/login",
+        Location: "/login",
       });
       res.end();
     }
@@ -177,7 +177,7 @@ router.get("/github/redirect", passport.authenticate("github"), (req, res) => {
       if (err) throw err;
       res.cookie("auth", token);
       res.writeHead(302, {
-        Location: "http://localhost:3000/login",
+        Location: "/login",
       });
       res.end();
     }

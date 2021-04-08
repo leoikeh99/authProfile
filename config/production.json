@@ -1,0 +1,8 @@
+{
+  "mongoURI": "mongodb+srv://leo:leo_1234@cluster0.5nikm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "secret",
+  "clientId_g":"133101340427-86j1olo5a031ropp74st9q7eg7s8rpok.apps.googleusercontent.com",
+  "clientSecret_g":"csIZtPtZNFOOB2k_DLkLD5jN",
+  "clientId_hub":"2f6013b768b60377475a",
+  "clientSecret_hub":"525b6534187a04f904828cc436119ab69802081c"
+}

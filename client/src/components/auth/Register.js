@@ -191,12 +191,12 @@ const Register = ({ auth, error, loader }) => {
         </p>
         <ul>
           <li>
-            <a href="http://localhost:5000/api/auth/google">
+            <a href="/api/auth/google">
               <img src={Google} alt="" />
             </a>
           </li>
           <li>
-            <a href="http://localhost:5000/api/auth/github">
+            <a href="/api/auth/github">
               <img src={Github} alt="" />
             </a>
           </li>
