@@ -46,7 +46,7 @@ const Register = ({ auth, error, loader }) => {
   useEffect(() => {
     if (error) {
       setOpen(true);
-    }
+    } // eslint-disable-next-line
   }, [error]);
 
   const submit = () => {
@@ -108,8 +108,8 @@ const Register = ({ auth, error, loader }) => {
           variant="outlined"
           value={values.username}
           onChange={handleChange("username")}
-          error={validate && validate.type == 1 ? true : false}
-          helperText={validate && validate.type == 1 && validate.msg}
+          error={validate && validate.type === 1 ? true : false}
+          helperText={validate && validate.type === 1 && validate.msg}
           fullWidth
           InputProps={{
             endAdornment: (
@@ -127,8 +127,8 @@ const Register = ({ auth, error, loader }) => {
           type="email"
           variant="outlined"
           value={values.email}
-          error={validate && validate.type == 2 ? true : false}
-          helperText={validate && validate.type == 2 && validate.msg}
+          error={validate && validate.type === 2 ? true : false}
+          helperText={validate && validate.type === 2 && validate.msg}
           onChange={handleChange("email")}
           fullWidth
           InputProps={{
@@ -145,8 +145,8 @@ const Register = ({ auth, error, loader }) => {
           id="outlined-adornment-password"
           type={values.showPassword ? "text" : "password"}
           value={values.password}
-          error={validate && validate.type == 3 ? true : false}
-          helperText={validate && validate.type == 3 && validate.msg}
+          error={validate && validate.type === 3 ? true : false}
+          helperText={validate && validate.type === 3 && validate.msg}
           onChange={handleChange("password")}
           label="Password"
           variant="outlined"

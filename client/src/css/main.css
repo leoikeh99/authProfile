@@ -22,6 +22,24 @@
     .login .firstImage {
       margin-bottom: 30px; } }
 
+@media screen and (max-width: 375px) {
+  .editProfile .cover {
+    padding: 30px 12px !important;
+    padding-top: 0 !important; } }
+
+@media screen and (max-width: 420px) {
+  .profile li:first-child {
+    flex-direction: column; }
+  .profile li a {
+    align-self: flex-start;
+    margin-top: 15px; }
+  .profile li .top {
+    align-self: flex-start; } }
+
+@media screen and (max-width: 500px) {
+  p:first-child {
+    width: 100px !important; } }
+
 body {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
@@ -33,6 +51,11 @@ body {
 
 .mr-1 {
   margin-right: 10px; }
+
+.loaderPosition {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh; }
 
 .spaceOut {
   display: flex;

@@ -45,7 +45,7 @@ const Login = ({ auth, error, loader, token, history }) => {
   useEffect(() => {
     if (error) {
       setOpen(true);
-    }
+    } // eslint-disable-next-line
   }, [error]);
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const Login = ({ auth, error, loader, token, history }) => {
     if (cookies.auth) {
       localStorage.setItem("token", cookies.auth);
       history.push("/");
-    }
+    } // eslint-disable-next-line
   }, [cookies, history]);
 
   const submit = () => {
@@ -112,8 +112,8 @@ const Login = ({ auth, error, loader, token, history }) => {
           variant="outlined"
           value={values.email}
           onChange={handleChange("email")}
-          error={validate && validate.type == 1 ? true : false}
-          helperText={validate && validate.type == 1 && validate.msg}
+          error={validate && validate.type === 1 ? true : false}
+          helperText={validate && validate.type === 1 && validate.msg}
           fullWidth
           InputProps={{
             endAdornment: (
@@ -129,8 +129,8 @@ const Login = ({ auth, error, loader, token, history }) => {
           id="outlined-adornment-password"
           type={values.showPassword ? "text" : "password"}
           value={values.password}
-          error={validate && validate.type == 2 ? true : false}
-          helperText={validate && validate.type == 2 && validate.msg}
+          error={validate && validate.type === 2 ? true : false}
+          helperText={validate && validate.type === 2 && validate.msg}
           onChange={handleChange("password")}
           label="Password"
           variant="outlined"

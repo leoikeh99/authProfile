@@ -24,3 +24,39 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .editProfile {
+    .cover {
+      padding: 30px 12px !important;
+      padding-top: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .profile {
+    li {
+      &:first-child {
+        flex-direction: column;
+      }
+
+      a {
+        align-self: flex-start;
+        margin-top: 15px;
+      }
+
+      .top {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    &:first-child {
+      width: 100px !important;
+    }
+  }
+}

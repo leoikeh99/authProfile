@@ -30,6 +30,7 @@ const EditProfile = ({
   useEffect(() => {
     clearStatus();
     getUser();
+    // eslint-disable-next-line
   }, []);
 
   const [values, setValues] = useState({
@@ -99,13 +100,13 @@ const EditProfile = ({
           email: email ? email : "",
         });
       }
-    }
+    } // eslint-disable-next-line
   }, [user]);
 
   useEffect(() => {
     if (status) {
       setOpen(true);
-    }
+    } // eslint-disable-next-line
   }, [status]);
 
   const save = () => {
@@ -183,7 +184,9 @@ const EditProfile = ({
         </Snackbar>
       )}
       {!user ? (
-        <div>loading...</div>
+        <div className="loaderPosition">
+          <CircularProgress />
+        </div>
       ) : (
         <div className="editProfile">
           <div className="container2">

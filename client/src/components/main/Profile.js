@@ -3,16 +3,20 @@ import { connect } from "react-redux";
 import { getUser } from "../../actions/authActions";
 import { Link } from "react-router-dom";
 import { isObjId } from "../../functions/otherFunctions";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
-const Profile = ({ getUser, auth: { user, loader2 } }) => {
+const Profile = ({ getUser, auth: { user } }) => {
   useEffect(() => {
     getUser();
+    // eslint-disable-next-line
   }, []);
   return (
     <div className="profile">
       <div className="container2">
         {!user ? (
-          <div>loading...</div>
+          <div className="loaderPosition">
+            <CircularProgress />
+          </div>
         ) : (
           <div>
             <h1>Personal info</h1>
