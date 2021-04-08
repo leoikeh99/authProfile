@@ -217,8 +217,7 @@ const EditProfile = ({
                     style={{
                       backgroundImage: `url(${
                         isObjId(user.avatar)
-                          ? "http://localhost:5000/api/user/avatar/" +
-                            user.avatar
+                          ? "/api/user/avatar/" + user.avatar
                           : user.avatar
                       })`,
                     }}

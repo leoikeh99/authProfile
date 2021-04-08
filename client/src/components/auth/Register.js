@@ -19,10 +19,12 @@ import Link from "@material-ui/core/Link";
 import Alert from "@material-ui/lab/Alert";
 import Snackbar from "@material-ui/core/Snackbar";
 import emailValidator from "email-validator";
+import { useCookies } from "react-cookie";
 
-const Register = ({ auth, error, loader }) => {
+const Register = ({ auth, error, loader, history }) => {
   const [validate, setValidate] = useState(null);
   const [open, setOpen] = useState(false);
+  const [cookies, setCookie] = useCookies(["auth"]);
   const [values, setValues] = useState({
     email: "",
     username: "",
@@ -48,6 +50,13 @@ const Register = ({ auth, error, loader }) => {
       setOpen(true);
     } // eslint-disable-next-line
   }, [error]);
+
+  useEffect(() => {
+    if (cookies.auth) {
+      localStorage.setItem("token", cookies.auth);
+      history.push("/");
+    } // eslint-disable-next-line
+  }, [cookies, history]);
 
   const submit = () => {
     setValidate(null);
