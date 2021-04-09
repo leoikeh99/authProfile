@@ -63,10 +63,10 @@
 
 - Users can register a new account
 - Users can log in
-- Users can log in or register with at least one of the following services: Google, Facebook, Twitter or Github
+- Users can log in or register with Google and Github
 - Users can sign out
-- Users can see my profile details
-- Users can edit my details including: photo, name, bio, phone, email and password
+- Users can see thier profile details
+- Users can edit thier details including: photo, name, bio, phone, email and password
 - Users can upload a new photo or provide an image URL
 
 ## How To Use
